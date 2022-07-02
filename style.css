@@ -87,6 +87,15 @@ body {
   /* background: #fff; */
 }
 
+.navigation ul li:hover {
+  background: #fff;
+}
+
+.navigation ul li:nth-child(1) {
+  top: 20px;
+  margin-bottom: 40px;
+  background: none;
+}
 .navigation ul li a {
   position: relative;
   display: block;
@@ -94,4 +103,15 @@ body {
   display: flex;
   text-decoration: none;
   color: #fff;
+}
+
+.navigation ul li:hover:not(:first-child) a {
+  color: #365fa1;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
 }
